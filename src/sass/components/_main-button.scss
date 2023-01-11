@@ -1,0 +1,94 @@
+.main-button {
+  width: 152px;
+  height: 42px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  color: var(--btn-text-color);
+  background-color: var(--secondary-bg-color);
+  border: 2px solid var(--secondary-bg-color);
+  border-radius: 10px;
+
+  &:hover {
+    background-color: var(--btn-hover-color);
+    border-color: var(--btn-hover-color);
+  }
+
+  &:focus {
+    background-color: var(--btn-hover-color);
+    border-color: var(--btn-hover-color);
+    color: var(--main-bg-color);
+  }
+
+  &:disabled {
+    background-color: var(--disable-btn-color);
+    border-color: var(--disable-btn-color);
+  }
+}
+
+.main-button--location {
+  width: 196px;
+  height: 42px;
+}
+
+.main-button--readmore {
+  width: 164px;
+  height: 42px;
+}
+
+.main-button--franchise {
+  width: 196px;
+  height: 42px;
+
+  background-color: transparent;
+
+  &:hover {
+    background-color: transparent;
+    border-color: var(--btn-hover-color);
+  }
+
+  &:focus {
+    background-color: transparent;
+    border-color: var(--btn-hover-color);
+    color: var(--main-bg-color);
+  }
+
+  &:disabled {
+    background-color: transparent;
+    border-color: var(--disable-btn-color);
+  }
+}
+
+.main-button--products {
+  width: 134px;
+  height: 42px;
+
+  background-color: transparent;
+
+  &:hover {
+    background-color: transparent;
+    border-color: var(--btn-hover-color);
+  }
+
+  &:focus {
+    background-color: transparent;
+    border-color: var(--btn-hover-color);
+    color: var(--main-bg-color);
+  }
+
+  &:disabled {
+    background-color: transparent;
+    border-color: var(--disable-btn-color);
+  }
+
+  @media screen and (max-width: $desktop-max) {
+    width: 108px;
+    height: 38px;
+  }
+}
