@@ -1,0 +1,37 @@
+// mobile
+.about {
+    background-color: var(--main-gradient-color);
+}
+.about__pretitle {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.23;  
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}
+.about__title {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.92;
+    color: var(--secondary-text-color);
+    text-align: center;
+}
+.about__paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
