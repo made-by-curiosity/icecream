@@ -21,6 +21,10 @@
     text-transform: uppercase;
     color: var(--secondary-text-color);
 }
+
+.about__pictures {
+    border-radius: 50%;
+}
 p {
     font-weight: 400;
     font-size: 14px;
@@ -36,3 +40,7 @@ p {
     letter-spacing: 0.02em;
 }
 
+.about__button {
+    text-align: center;
+    justify-content: center;
+}
