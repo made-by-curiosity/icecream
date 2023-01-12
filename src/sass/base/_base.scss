@@ -1,3 +1,7 @@
+* {
+  cursor: url('../images/cursors/cursor-main.png'), auto;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
@@ -13,12 +17,13 @@ img {
 
 a {
   color: inherit;
+  cursor: url('../images/cursors/cursor-pointer.png'), pointer;
 }
 
 button {
   padding-left: 0;
   padding-right: 0;
-  cursor: pointer;
+  cursor: url('../images/cursors/cursor-pointer.png'), pointer;
   border: none;
   background-color: inherit;
 }
