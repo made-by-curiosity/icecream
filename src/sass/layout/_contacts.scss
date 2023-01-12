@@ -16,6 +16,7 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  margin-bottom: 20px;
 }
 .contacts__card-item {
   padding: 40px 32px 24px;
@@ -46,7 +47,7 @@
   margin-bottom: 8px;
 }
 .address__location,
-.address__schedule {
+.contacts__schedule {
   position: relative;
   padding-bottom: 24px;
   margin-bottom: 24px;
@@ -73,4 +74,11 @@
 }
 .contacts__connection-item:not(:last-child) {
   margin-bottom: 6px;
+}
+.contacts__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 60px;
 }
