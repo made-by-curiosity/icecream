@@ -1,9 +1,20 @@
 // mobile
 
 .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--main-gradient-color);
 }
 .about__uppertitle {
+    @media screen and(min-width:$mini-mobile-min) {
+        margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.2;  
+        text-align: center;
+        text-transform: uppercase;
+
+    }
     font-weight: 800;
     font-size: 30px;
     line-height: 1.23;  
@@ -12,6 +23,16 @@
     color: var(--secondary-text-color);
 }
 .about__title {
+    @media screen and(min-width:$mini-mobile-min) {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 54px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.26;
+        letter-spacing: 0.04em;
+    }
     font-family: 'Seymour One';
     font-weight: 400;
     font-size: 36px;
@@ -22,7 +43,7 @@
     color: var(--secondary-text-color);
 }
 
-.about__pictures {
+.about__img {
     border-radius: 50%;
 }
 p {
