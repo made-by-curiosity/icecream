@@ -1,8 +1,14 @@
 // mobile
 
 .about {
+    @media screen and(min-width:$mini-mobile-min){
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+@media screen and(min-width:$mobile-min) {
     padding-top: 60px;
     padding-bottom: 60px;
+}
     background-color: var(--main-gradient-color);
 }
 .about__uppertitle {
@@ -13,8 +19,8 @@
         line-height: 1.2;  
         text-align: center;
         text-transform: uppercase;
-
     }
+    
     font-weight: 800;
     font-size: 30px;
     line-height: 1.23;  
@@ -44,26 +50,40 @@
 }
 
 .about__img {
-    
     border-radius: 50%;
+    @media screen and(min-width:$mini-mobile-min){
+        margin-right: auto;
+        margin-left: auto;
+}
+
+
 }
 .about__images {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    @media screen and(min-width:$mobile-min) {
+        margin-right: auto;
+        margin-top: auto;
+    }
+}
+
+.about__text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about__text {
     color: var(--secondary-text-color);
     @media screen and(min-width:$mini-mobile-min) {
-        width: 200px;
+        width: 220px;
         margin-left: auto;
         margin-right: auto;
-        font-weight: 400;
         font-size: 12px;
         line-height: 1.75;
         letter-spacing: 0.04em;
         margin-bottom: 4px;
     }
-    font-weight: 400;
+
     font-size: 16px;
     line-height: 1.75;
     text-align: center;
@@ -72,20 +92,25 @@
 
 .about__text-paragraph {
     color: var(--secondary-text-color);
-    text-align: center;
+    
     @media screen and(min-width:$mini-mobile-min) {
-        width: 200px;
+        width: 220px;
         margin-left: auto;
         margin-right: auto;
-        font-weight: 400;
         font-size: 12px;
-        line-height: 1.75;
-        letter-spacing: 0.04em;
+        line-height: 1.58;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    @media screen and(min-width:$mobile-min) {
+        margin-bottom: 24px;
     }
 }
 
+.about__text-paragraph-hidden {
+    display: none;
+}
 
-.about__button {
-    text-align: center;
-    justify-content: center;
+.main-button.about__button {
+    width: 164px;
 }
