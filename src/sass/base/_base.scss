@@ -59,6 +59,10 @@ img {
 a {
   color: inherit;
   cursor: url('../images/cursors/cursor-pointer.png'), pointer;
+
+  & * {
+    cursor: url('../images/cursors/cursor-pointer.png'), pointer;
+  }
 }
 
 button {
@@ -67,4 +71,8 @@ button {
   cursor: url('../images/cursors/cursor-pointer.png'), pointer;
   border: none;
   background-color: inherit;
+
+  & * {
+    cursor: url('../images/cursors/cursor-pointer.png'), pointer;
+  }
 }
