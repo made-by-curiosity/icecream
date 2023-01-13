@@ -11,6 +11,15 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.contacts {
+  padding-bottom: 60px;
+  @media screen and (min-width: $tablet-min) {
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: $desktop-min) {
+    padding-bottom: 120px;
+  }
+}
 .contacts__card-list {
   display: flex;
   flex-direction: column;
@@ -27,12 +36,15 @@
   }
   @media screen and (min-width: $desktop-min) {
     gap: 32px;
+    margin-bottom: 60px;
   }
 }
 .contacts__card-item {
   padding: 40px 32px 24px;
   border-radius: 24px;
   max-width: 240px;
+
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 
   background-color: var(--secondary-text-color);
   @media screen and (min-width: $tablet-min) {
@@ -54,7 +66,7 @@
   }
   @media screen and (min-width: $desktop-min) {
     font-size: 16px;
-    line-height: 1.81;
+    line-height: 1.87;
   }
 }
 .contacts__representative {
@@ -81,7 +93,7 @@
     margin-bottom: 36px;
   }
 }
-.address__city {
+.contacts__city {
   margin-bottom: 8px;
   @media screen and (min-width: $tablet-min) {
     margin-bottom: 12px;
@@ -90,7 +102,7 @@
     margin-bottom: 8px;
   }
 }
-.address__location,
+.contacts__location,
 .contacts__schedule {
   position: relative;
   padding-bottom: 24px;
@@ -110,9 +122,17 @@
     margin-bottom: 32px;
   }
 }
-.address__location-link:hover,
-.address__location-link:focus {
+.contacts__location-link {
   color: var(--address-color);
+  opacity: 1;
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+  @media screen and (min-width: $desktop-min) {
+    font-size: 16px;
+    line-height: 1.81;
+  }
 }
 .contacts__schedule-item:not(:last-child) {
   margin-bottom: 8px;
@@ -129,20 +149,31 @@
     margin-bottom: 4px;
   }
 }
+.contacts__connection-link {
+  font-size: 12px;
+  line-height: 1.58;
+  opacity: 1;
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+  @media screen and (min-width: $tablet-min) {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  @media screen and (min-width: $desktop-min) {
+    font-size: 16px;
+  }
+}
 .contacts__btn {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  margin-bottom: 60px;
 
   @media screen and (min-width: $tablet-min) {
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 40px;
-  }
-  @media screen and (min-width: $desktop-min) {
-    margin-bottom: 120px;
   }
 }
 .contacts__btn-icon {
