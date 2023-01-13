@@ -14,7 +14,6 @@
 
     &__title {
         font-family: 'Seymour One', sans-serif;
-        font-weight: 400;
         font-size: 30px;
         line-height: 1.27;
         text-align: center;
@@ -50,7 +49,6 @@
     }
 
     &__text {
-        font-weight: 400;
         font-size: 14px;
         text-align: center;
         color: var(--main-text-color);
@@ -59,12 +57,15 @@
     &__button {
         position: absolute;
         display: block;
-        bottom: 24px;
+        bottom: 11px;
         left: 50%;
         transform: translate(-50%);
-        padding: 0;
-        height: 16px;
-        width: 40px;
+        padding: 5px 10px;
+
+        &:hover,
+        &:focus {
+          fill: var(--main-bg-color);  
+        }
     }
 }
 
@@ -181,7 +182,7 @@
     }
 
     .products__button {
-        bottom: 12px;
+        bottom: 7px;
     }
 }
 
@@ -240,6 +241,6 @@
     }
 
     .products__button {
-        bottom: 60px;
+        bottom: 55px;
     }
 }
