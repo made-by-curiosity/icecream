@@ -58,20 +58,18 @@
 }
 .contacts__wrapper {
   font-weight: 500;
-  line-height: 1.83;
+  line-height: 1.86;
   color: var(--main-text-color);
   @media screen and (min-width: $tablet-min) {
     font-size: 14px;
-    line-height: 1.85;
   }
   @media screen and (min-width: $desktop-min) {
     font-size: 16px;
-    line-height: 1.87;
   }
 }
 .contacts__representative {
   display: inline-block;
-  line-height: 1.16;
+  line-height: 1.2;
   text-align: center;
 
   margin-bottom: 20px;
@@ -82,7 +80,7 @@
   background-color: var(--secondary-bg-color);
   @media screen and (min-width: $tablet-min) {
     font-size: 16px;
-    line-height: 1.37;
+    line-height: 1.4;
     padding: 4px 10px;
     max-width: 138px;
     margin-bottom: 32px;
@@ -123,6 +121,7 @@
   }
 }
 .contacts__location-link {
+  line-height: 1.83;
   color: var(--address-color);
   opacity: 1;
   &:hover,
@@ -131,7 +130,6 @@
   }
   @media screen and (min-width: $desktop-min) {
     font-size: 16px;
-    line-height: 1.81;
   }
 }
 .contacts__schedule-item:not(:last-child) {
@@ -151,18 +149,14 @@
 }
 .contacts__connection-link {
   font-size: 12px;
-  line-height: 1.58;
+  line-height: 1.6;
   opacity: 1;
   &:hover,
   &:focus {
     opacity: 0.9;
   }
   @media screen and (min-width: $tablet-min) {
-    font-size: 14px;
     line-height: 1.5;
-  }
-  @media screen and (min-width: $desktop-min) {
-    font-size: 16px;
   }
 }
 .contacts__btn {
