@@ -1,0 +1,104 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  background-color: var(--main-gradient-color);
+  color: var(--secondary-text-color);
+  @media screen and (min-width: $tablet-min) {
+    flex-direction: row;
+    gap: 80px;
+  }
+  @media screen and (min-width: $desktop-min) {
+    gap: 32px;
+  }
+}
+
+.factoid {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 230px;
+  @media screen and (min-width: $tablet-min) {
+    max-width: 152px;
+  }
+  @media screen and (min-width: $desktop-min) {
+    max-width: 270px;
+  }
+}
+
+.factoid--cow::before,
+.factoid--weight::before,
+.factoid--ice-cream::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-inline: auto;
+  margin-bottom: 16px;
+  background-color: var(--secondary-bg-color);
+  @media screen and (min-width: $tablet-min) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: $desktop-min) {
+    margin-bottom: 40px;
+  }
+}
+
+.factoid--cow::before {
+  background-image: url(../images/advantages/advantages-cow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.factoid--weight::before {
+  background-image: url(../images/advantages/advantages-weight.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.factoid--ice-cream::before {
+  background-image: url(../images/advantages/advantages-ice-cream.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .factoid--ice-cream::before {
+    background-image: url(../images/advantages/advantages-ice-cream-2x.png);
+  }
+
+  .factoid--cow::before {
+    background-image: url(../images/advantages/advantages-cow-2x.png);
+  }
+
+  .factoid--weight::before {
+    background-image: url(../images/advantages/advantages-weight-2x.png);
+  }
+}
+
+.factoid__number {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+  @media screen and (min-width: $tablet-min) {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: $desktop-min) {
+    font-size: 58px;
+    margin-bottom: 12px;
+  }
+}
+
+.factoid__desc {
+  font-weight: 700;
+  line-height: 1.7;
+  @media screen and (min-width: $tablet-min) {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
