@@ -1,0 +1,206 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.contacts {
+  position: relative;
+  height: 1095px;
+  padding-bottom: 60px;
+  @media screen and (min-width: $mobile-min) {
+    height: 1103px;
+  }
+  @media screen and (min-width: $tablet-min) {
+    padding-bottom: 40px;
+    height: 360px;
+  }
+  @media screen and (min-width: $desktop-min) {
+    padding-bottom: 120px;
+    height: 636px;
+  }
+}
+.container__contacts-wrapper {
+  position: absolute;
+  bottom: 60px;
+
+  width: 100%;
+
+  @media screen and (min-width: $tablet-min) {
+    bottom: 40px;
+  }
+  @media screen and (min-width: $desktop-min) {
+    bottom: 120px;
+  }
+}
+.contacts__card-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $mobile-min) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: $tablet-min) {
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: $desktop-min) {
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+}
+.contacts__card-item {
+  padding: 40px 32px 24px;
+  border-radius: 24px;
+  width: 280px;
+
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+  background-color: var(--secondary-text-color);
+  @media screen and (min-width: $tablet-min) {
+    width: 224px;
+    padding: 40px 24px;
+  }
+  @media screen and (min-width: $desktop-min) {
+    width: 368px;
+    padding: 40px 40px;
+  }
+}
+.contacts__wrapper {
+  font-weight: 500;
+  line-height: 1.86;
+  color: var(--main-text-color);
+  @media screen and (min-width: $tablet-min) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: $desktop-min) {
+    font-size: 16px;
+  }
+}
+.contacts__representative {
+  display: inline-block;
+  line-height: 1.2;
+  text-align: center;
+
+  margin-bottom: 20px;
+  padding: 4px 22px;
+  max-width: 130px;
+  border-radius: 4px;
+
+  background-color: var(--secondary-bg-color);
+  @media screen and (min-width: $tablet-min) {
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 4px 10px;
+    max-width: 138px;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: $desktop-min) {
+    max-width: 148;
+    padding: 4px 14px;
+  }
+}
+.contacts__city {
+  margin-bottom: 8px;
+  @media screen and (min-width: $tablet-min) {
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: $desktop-min) {
+    margin-bottom: 8px;
+  }
+}
+.contacts__location,
+.contacts__schedule {
+  position: relative;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+
+    background-color: var(--line-color);
+  }
+  @media screen and (min-width: $tablet-min) {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+}
+.contacts__location-link {
+  line-height: 1.83;
+  color: var(--address-color);
+  opacity: 1;
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+  @media screen and (min-width: $desktop-min) {
+    font-size: 16px;
+  }
+}
+.contacts__schedule-item:not(:last-child) {
+  margin-bottom: 8px;
+  @media screen and (min-width: $desktop-min) {
+    margin-bottom: 12px;
+  }
+}
+.contacts__schedule-day {
+  letter-spacing: 0em;
+  @media screen and (min-width: $desktop-min) {
+    letter-spacing: 0.04em;
+  }
+}
+.contacts__schedule-time {
+  color: var(--disable-btn-color);
+  letter-spacing: 0em;
+}
+.contacts__connection-item {
+  line-height: 1.6;
+  @media screen and (min-width: $tablet-min) {
+    line-height: 1.5;
+  }
+}
+.contacts__connection-item:not(:last-child) {
+  margin-bottom: 6px;
+  @media screen and (min-width: $tablet-min) {
+    margin-bottom: 4px;
+  }
+}
+.contacts__connection-link {
+  opacity: 1;
+  letter-spacing: 0em;
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+.contacts__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @media screen and (min-width: $tablet-min) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.contacts__btn-icon {
+  vertical-align: middle;
+  margin-left: 4px;
+}
