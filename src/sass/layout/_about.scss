@@ -17,8 +17,12 @@
     display: flex;
     flex-direction: column-reverse;
     }
+    
 }
 .about__uppertitle {
+        text-align: center;
+        text-transform: uppercase;
+        
         @media screen and(min-width:$mini-mobile-min) {
         margin-bottom: 12px;
         font-weight: 700;
@@ -42,9 +46,6 @@
             font-size: 30px;
             line-height: 1.23;  
         }
-        text-align: center;
-        text-transform: uppercase;
-    
 }
 .about__title {
     @media screen and(min-width:$mini-mobile-min) {
@@ -74,7 +75,7 @@
         font-size: 36px;
         line-height: 1.25;
         width: auto;
-        margin-bottom: 121px;
+        margin-bottom: 120px;
     }
     
     font-family: 'Seymour One';
@@ -120,6 +121,7 @@
     }
     @media screen and(min-width:$desktop-min) {
         margin-right: 0px;
+        margin-bottom: 0px;
     }
     z-index: 10;
     
@@ -138,13 +140,12 @@
     box-shadow: 0 8px 30px rgb(153 114 23 / 25%);
      width: 279px;
      height: 278px;
-    
+     left: 50%;
+     transform: translate(-50%);
     @media screen and(min-width:$tablet-min) {
         width: 321px;
         min-height: 330px;
         bottom:26px;
-        margin-left: auto;
-        margin-right: auto;
     }
     @media screen and(min-width:$desktop-min) {
         bottom:39px;
