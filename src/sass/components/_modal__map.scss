@@ -1,0 +1,31 @@
+.modal-map__modal {
+  max-width: 280px;
+  padding: 28px 28px;
+  text-align: center;
+  @media screen and (min-width: $desktop-min) {
+    max-width: 568px;
+    padding: 32px 60px;
+  }
+}
+.modal-map__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  @media screen and (min-width: $desktop-min) {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+}
+.modal-map__map {
+  border-radius: 20px;
+  margin-bottom: 24px;
+  @media screen and (min-width: $desktop-min) {
+    width: 448px;
+    height: 260px;
+    margin-bottom: 32px;
+  }
+}
