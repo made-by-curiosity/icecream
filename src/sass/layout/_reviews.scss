@@ -2,7 +2,6 @@
     padding-bottom: 228px;
 }
 .carousel{
-   
     &__item{
      display: flex;
      flex-direction: column;
@@ -14,23 +13,42 @@
         border-radius: 44px;
     }
     &__text{
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 186%;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 255%;
         text-align: center;
         color: var(--secondary-text-color);
-        max-width: 968px;
+        max-width: 280px;
         background-color: var(--main-gradient-color);
-        border-radius: 24px;
-        padding: 43px 109px;
+        border-radius: 10px;
+        padding: 35px 39px;
         margin-bottom: 32px;
+        @media screen and (min-width: $tablet-min) {
+            border-radius: 24px;
+            padding: 28px 80px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 186%;
+            max-width: 705px;
+        }
+        
+        @media screen and (min-width: $desktop-min) {
+            font-size: 16px;
+            padding: 43px 109px;
+            max-width: 968px;
+        }
     }
     &__name{
         font-weight: 500;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 186%;
         text-align: center;
         color: var(--main-text-color);
         margin-bottom: 32px;
+        @media screen and (min-width: $tablet-min) {
+            font-size: 16px;
+        }
+        
     }
+  
 }
