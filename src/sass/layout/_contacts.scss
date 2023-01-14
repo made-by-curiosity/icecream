@@ -30,8 +30,10 @@
 .container__contacts-wrapper {
   position: absolute;
   top: -419px;
-  left: 50%;
-  transform: translateX(-50%);
+  @media screen and (max-width: $tablet-max) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
   @media screen and (min-width: $mobile-min) {
     top: -415px;
   }
