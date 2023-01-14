@@ -1,5 +1,3 @@
-
-
 .about {
     @media screen and(min-width:$mini-mobile-min){
     padding-bottom: 50px;
@@ -10,79 +8,61 @@
     background-color: var(--main-gradient-color);
     padding-top: 60px;
     color: var(--secondary-text-color);
-}
-
-.about__title-uppertitle {
-    @media screen and(min-width:$mobile-min)and (max-width:$tablet-max) {
-    display: flex;
-    flex-direction: column-reverse;
-    }
     
-}
-.about__uppertitle {
+    &__title-uppertitle {
+        @media screen and(min-width:$mobile-min)and (max-width:$tablet-max) {
+        display: flex;
+        flex-direction: column-reverse;
+        }
+    }
+
+    &__uppertitle {
         text-align: center;
         text-transform: uppercase;
-        
         @media screen and(min-width:$mini-mobile-min) {
+        @include font($fs:18, $fw:700, $lh:22, $ls:0.04em);
         margin-bottom: 12px;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.2;  
         }
-
         @media screen 
         and(min-width:$mobile-min) and (max-width:$tablet-max) {
         margin-bottom: 54px;
         }
-
         @media screen and(min-width:$tablet-min) and (max-width:$desktop-max) {
-            font-weight: 800;
-            font-size: 22px;
-            line-height: 1.22;  
+            @include font($fs:22, $fw:800, $lh:27, $ls:0.04em); 
             margin-bottom: 12px;
         }
         @media screen and(min-width:$desktop-min) {
-            font-weight: 800;
-            font-size: 30px;
-            line-height: 1.23;  
+            @include font($fs:30, $fw:800, $lh:37, $ls:0.04em);  
         }
 }
-.about__title {
+
+&__title {
     @media screen and(min-width:$mini-mobile-min) {
         width: 200px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 54px;
-        font-size: 30px;
-        line-height: 1.26;
-        letter-spacing: 0.04em;
+        @include font($fs:30, $fw:400, $lh:38, $ls:0.04em);
     }
-
     @media screen and(min-width:$mobile-min) and (max-width:$tablet-max) {
         margin-bottom: 12px;
         }
 
     @media screen and(min-width:$tablet-min) and (max-width:$desktop-max) {
-        font-size: 34px;
-        line-height: 1.26;
+        @include font($fs:34, $fw:400, $lh:43, $ls:0.06em);
         width: auto;
         margin-bottom: 80px;
-        margin-left: auto;
-        margin-right: auto;
     }
-    
     @media screen and(min-width:$desktop-min){
-        font-size: 36px;
-        line-height: 1.25;
+        @include font($fs:36, $fw:400, $lh:45, $ls:0.06em);
         width: auto;
         margin-bottom: 120px;
     }
-    
     font-family: 'Seymour One';
-    font-weight: 400;
+    @include font($fs:none, $fw:400, $lh:none, $ls:0.06em);
     text-align: center;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
+}
 }
 
 .about__img {
@@ -96,8 +76,7 @@
 }
 @media screen and(min-width:$tablet-min)and (max-width:$desktop-max) {
     width: 330px;
-    height: 330px;
-    
+    height: 330px; 
 }
 @media screen and(min-width:$desktop-min) {
     width: 100%;
@@ -124,7 +103,6 @@
         margin-bottom: 0px;
     }
     z-index: 10;
-    
     position: relative;
 }
 .about__images::before {
@@ -179,18 +157,14 @@
         width: 220px;
         margin-left: auto;
         margin-right: auto;
-        font-size: 12px;
-        line-height: 1.75;
-        letter-spacing: 0.04em;
+        @include font($fs:12, $fw:400, $lh:21, $ls:0.04em);
         margin-bottom: 4px;
         text-align: center;
     }
     @media screen and(min-width:$tablet-min) and (max-width:$desktop-max) {
         width: 344px;
         height: 84px;
-        font-size: 12px;
-        line-height: 1.75;
-        letter-spacing: 0.04em;
+        @include font($fs:12, $fw:400, $lh:21, $ls:0.04em);
         margin-bottom: 8px;
         margin-right: 0px;
         margin-left: 0px;
@@ -199,22 +173,17 @@
     @media screen and(min-width:$desktop-min) {
         width: 463px;
         height: 111px;
-        font-size: 16px;
-        line-height: 1.75;
-        letter-spacing: 0.04em;
+        @include font($fs:16, $fw:400, $lh:28, $ls:0.04em);
         margin-bottom: 8px;
     }
 }
 
 .about__text-paragraph {
-    
-
     @media screen and(min-width:$mini-mobile-min) {
         width: 220px;
         margin-left: auto;
         margin-right: auto;
-        font-size: 12px;
-        line-height: 1.58;
+        @include font($fs:12, $fw:400, $lh:19, $ls:0.04em);
         margin-bottom: 10px;
         text-align: center;
     }
@@ -226,9 +195,7 @@
     @media screen and(min-width:$tablet-min) and (max-width:$desktop-max) {
         width: 344px;
         height: 103px;
-        font-size: 12px;
-        line-height: 1.75;
-        letter-spacing: 0.04em;
+        @include font($fs:12, $fw:400, $lh:21, $ls:0.04em);
         margin-bottom: 8px;
         margin-right: 0px;
         margin-left: 0px;
@@ -238,13 +205,9 @@
      @media screen and(min-width:$desktop-min) {
         width: 463px;
         height: 107px;
-        font-size: 14px;
-        line-height: 1.92;
-        letter-spacing: 0.04em;
-        margin-bottom: 8px;
+        @include font($fs:14, $fw:400, $lh:27, $ls:0.04em);
         text-align:start;
     }
-    font-weight: 400;
 }
 
 .about__text-paragraph-hidden {
@@ -253,18 +216,14 @@
         display:flex;
         text-align: start;
         height: 51px;
-        font-size: 12px;
-        line-height: 1.91;
-        letter-spacing: 0.04em;
+        @include font($fs:12, $fw:400, $lh:23, $ls:0.04em);
         margin-bottom: 32px;
     }
     @media screen and(min-width:$desktop-min) {
         display:flex;
         width: 457px;
         height: 23px;
-        font-size: 14px;
-        line-height: 1.92;
-        letter-spacing: 0.04em;
+        @include font($fs:14, $fw:400, $lh:27, $ls:0.04em);
         margin: 0px;
         margin-bottom: 54px;
         text-align:start;
