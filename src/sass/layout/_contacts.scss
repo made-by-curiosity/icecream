@@ -12,34 +12,36 @@
   overflow: hidden;
 }
 .contacts {
-  // position: relative;
-  // height: 1095px;
+  position: relative;
+  height: 1095px;
   padding-bottom: 60px;
   @media screen and (min-width: $mobile-min) {
-    // height: 1103px;
+    height: 1103px;
   }
   @media screen and (min-width: $tablet-min) {
     padding-bottom: 40px;
-    // height: 360px;
+    height: 360px;
   }
   @media screen and (min-width: $desktop-min) {
     padding-bottom: 120px;
-    // height: 636px;
+    height: 636px;
   }
 }
-// .container__contacts-wrapper {
-//   position: absolute;
-//   top: -353px;
-//   @media screen and (min-width: $mobile-min) {
-//     top: -349px;
-//   }
-//   @media screen and (min-width: $tablet-min) {
-//     top: -229px;
-//   }
-//   @media screen and (min-width: $desktop-min) {
-//     top: -128px;
-//   }
-// }
+.container__contacts-wrapper {
+  position: absolute;
+  top: -419px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media screen and (min-width: $mobile-min) {
+    top: -415px;
+  }
+  @media screen and (min-width: $tablet-min) {
+    top: -307px;
+  }
+  @media screen and (min-width: $desktop-min) {
+    top: -136px;
+  }
+}
 .contacts__card-list {
   display: flex;
   flex-direction: column;
@@ -157,8 +159,15 @@
     margin-bottom: 12px;
   }
 }
+.contacts__schedule-day {
+  letter-spacing: 0em;
+  @media screen and (min-width: $desktop-min) {
+    letter-spacing: 0.04em;
+  }
+}
 .contacts__schedule-time {
   color: var(--disable-btn-color);
+  letter-spacing: 0em;
 }
 .contacts__connection-item {
   line-height: 1.6;
@@ -174,6 +183,7 @@
 }
 .contacts__connection-link {
   opacity: 1;
+  letter-spacing: 0em;
   &:hover,
   &:focus {
     opacity: 0.9;
