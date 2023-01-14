@@ -1,8 +1,18 @@
 .advantages {
+  padding-top: 0;
+  // padding-bottom: 0;
+  @media screen and (min-width: $tablet-min) {
+    padding-bottom: 200px;
+  }
+  @media screen and (min-width: $desktop-min) {
+    padding-bottom: 180px;
+  }
+}
+
+.advantages__list {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  background-color: var(--main-gradient-color);
   color: var(--secondary-text-color);
   @media screen and (min-width: $tablet-min) {
     flex-direction: row;
@@ -21,7 +31,7 @@
     max-width: 152px;
   }
   @media screen and (min-width: $desktop-min) {
-    max-width: 270px;
+    max-width: 368px;
   }
 }
 
@@ -100,5 +110,8 @@
   @media screen and (min-width: $tablet-min) {
     font-weight: 400;
     font-size: 14px;
+  }
+  @media screen and (min-width: $desktop-min) {
+    font-size: 16px;
   }
 }
