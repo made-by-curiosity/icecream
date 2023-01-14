@@ -70,11 +70,11 @@
 
   background-color: var(--secondary-text-color);
   @media screen and (min-width: $tablet-min) {
-    max-width: 224px;
+    width: 224px;
     padding: 40px 24px;
   }
   @media screen and (min-width: $desktop-min) {
-    max-width: 368px;
+    width: 368px;
     padding: 40px 40px;
   }
 }
