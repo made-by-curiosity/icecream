@@ -29,19 +29,17 @@
 }
 .container__contacts-wrapper {
   position: absolute;
-  top: -419px;
+  bottom: 60px;
   @media screen and (max-width: $tablet-max) {
     left: 50%;
     transform: translateX(-50%);
   }
-  @media screen and (min-width: $mobile-min) {
-    top: -415px;
-  }
+
   @media screen and (min-width: $tablet-min) {
-    top: -307px;
+    bottom: 40px;
   }
   @media screen and (min-width: $desktop-min) {
-    top: -136px;
+    bottom: 120px;
   }
 }
 .contacts__card-list {
@@ -148,7 +146,7 @@
   opacity: 1;
   &:hover,
   &:focus {
-    opacity: 0.9;
+    opacity: 0.7;
   }
   @media screen and (min-width: $desktop-min) {
     font-size: 16px;
@@ -187,7 +185,7 @@
   letter-spacing: 0em;
   &:hover,
   &:focus {
-    opacity: 0.9;
+    opacity: 0.7;
   }
 }
 .contacts__btn {
