@@ -9,9 +9,38 @@ body {
   font-size: 12px;
   line-height: 1.76;
   letter-spacing: 0.04em;
+  background-color: var(--main-gradient-color);
+}
 
-  background-position: 50% 50%;
-  background-attachment: fixed;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  cursor: url('../images/cursors/cursor-pointer.png'), pointer;
+
+  & * {
+    cursor: url('../images/cursors/cursor-pointer.png'), pointer;
+  }
+}
+
+button {
+  padding-left: 0;
+  padding-right: 0;
+  cursor: url('../images/cursors/cursor-pointer.png'), pointer;
+  border: none;
+  background-color: inherit;
+
+  & * {
+    cursor: url('../images/cursors/cursor-pointer.png'), pointer;
+  }
+}
+
+.icecream-background {
+  background-position: center;
 
   @media screen and (max-width: $tablet-max) {
     background-image: url('../images/background/background-mobile.jpg');
@@ -48,23 +77,4 @@ body {
       background-image: url('../images/background/background-desktop@2x.jpg');
     }
   }
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-a {
-  color: inherit;
-  cursor: url('../images/cursors/cursor-pointer.png'), pointer;
-}
-
-button {
-  padding-left: 0;
-  padding-right: 0;
-  cursor: url('../images/cursors/cursor-pointer.png'), pointer;
-  border: none;
-  background-color: inherit;
 }
