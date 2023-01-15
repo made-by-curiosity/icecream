@@ -14,9 +14,9 @@
     max-width: 280px;
     padding: 29px 20px;
     position: absolute;
-    top: 50%;
+    top: 20px;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%);
     border-radius: 10px;
     border: 2px solid #F8D24E;
 
@@ -98,6 +98,8 @@
         max-width: 568px;
         width: 568px;
         padding: 32px 40px;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
 
     &__title {
         margin-bottom: 24px;

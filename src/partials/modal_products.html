@@ -1,0 +1,33 @@
+<div class="backdrop">
+    <div class="modal">
+        <button class="modal__close">
+            <svg width="20" height="20">
+                <use href="..//..//src/images/svg-sprite/symbol-defs.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form class="modal__form">
+            <h2 class="modal__title">Chololate icecream</h2>
+        <img class="products-modal__img" srcset="/src/images/products/chocolate.jpg 1x, /src/images/products/chocolate@2x.jpg  2x" src="/src/images/products/chocolate.jpg"
+            alt="Сhocolate icecream" width="132" height="132">
+        <ul  class="products-modal__list">
+            <li class="products-modal__box"><span class="products-modal__item">320</span>kcal</li>
+            <li class="products-modal__box"><span class="products-modal__item">4g</span>Prote...</li>
+            <li class="products-modal__box"><span class="products-modal__item">8,2g</span>Fats</li>
+            <li class="products-modal__box"><span class="products-modal__item">40,4g</span>Carbs</li>
+        </ul>  
+        <p class="products-modal__ingredients">Ingredients</p>
+        <ul class="products-modal__ingredients-list">
+            <li class="products-modal__ingredients-item"><span class="products-modal__ingredients-name">Milk</span><span class="products-modal__ingredients-text">100ml</span></li>
+            <li class="products-modal__ingredients-item"><span class="products-modal__ingredients-name">Belgian chocolate</span><span class="products-modal__ingredients-text">20g</span></li>
+            <li class="products-modal__ingredients-item"><span class="products-modal__ingredients-name">Cream</span><span class="products-modal__ingredients-text">150 ml</span></li>
+            <li class="products-modal__ingredients-item"><span class="products-modal__ingredients-name">Cocoa powder</span><span class="products-modal__ingredients-text">30g</span></li>
+            <li class="products-modal__ingredients-item"><span class="products-modal__ingredients-name">Sugar</span><span class="products-modal__ingredients-text">40g</span></li>
+            <li class="products-modal__ingredients-item"><span class="products-modal__ingredients-name">Vanilla sugar</span><span class="products-modal__ingredients-text">10g</span></li>
+        </ul>  
+            <input class="modal__input" type="text" name="name" placeholder="Name" pattern="[A-Z,a-z]{1,15}">
+            <input class="modal__input" type="tel" name="tel" placeholder="Phone" pattern="\+?[0-9\s\-\(\)]+">
+            <textarea class="modal__comment" name="comment" placeholder="Comment"></textarea>
+            <button class="main-button main-button--modal" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
