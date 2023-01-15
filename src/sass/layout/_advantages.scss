@@ -49,6 +49,9 @@
   margin-inline: auto;
   margin-bottom: 16px;
   background-color: var(--secondary-bg-color);
+  background-repeat: no-repeat;
+  background-size: 36px 36px;
+  background-position: center;
   @media screen and (min-width: $tablet-min) {
     margin-bottom: 32px;
   }
@@ -59,23 +62,14 @@
 
 .advantages__item--cow::before {
   background-image: url(../images/advantages/icon-cow.png);
-  background-repeat: no-repeat;
-  background-size: 36px 36px;
-  background-position: center;
 }
 
 .advantages__item--weight::before {
   background-image: url(../images/advantages/icon-weight.png);
-  background-repeat: no-repeat;
-  background-size: 36px 36px;
-  background-position: center;
 }
 
 .advantages__item--ice-cream::before {
   background-image: url(../images/advantages/icon-ice-cream.png);
-  background-repeat: no-repeat;
-  background-size: 36px 36px;
-  background-position: center;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
