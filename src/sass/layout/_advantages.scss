@@ -92,15 +92,13 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.22;
-  letter-spacing: 0.04em;
   margin-bottom: 16px;
   @media screen and (min-width: $tablet-min) {
     font-size: 48px;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
   }
   @media screen and (min-width: $desktop-min) {
     font-size: 58px;
-    margin-bottom: 12px;
   }
 }
 
