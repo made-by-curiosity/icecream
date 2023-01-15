@@ -14,9 +14,9 @@
     max-width: 280px;
     padding: 29px 20px;
     position: absolute;
-    top: 20px;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%) scale(1);
     border-radius: 10px;
     border: 2px solid #F8D24E;
 
@@ -89,17 +89,11 @@
     width: 132px;
 }
 
-.modal__input:not(:placeholder-shown):invalid {
-    border-color: red;
-}
-
  @media screen and (min-width: $tablet-min) {
     .modal {
         max-width: 568px;
         width: 568px;
         padding: 32px 40px;
-        top: 50%;
-        transform: translate(-50%, -50%) scale(1);
 
     &__title {
         margin-bottom: 24px;
@@ -128,3 +122,6 @@
  }
 }
 
+ .modal__input:not(:placeholder-shown):invalid {
+     border-color: red;
+ }
