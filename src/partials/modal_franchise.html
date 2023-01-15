@@ -1,4 +1,4 @@
-<div class="backdrop notis-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal-franchise>
   <div class="modal">
     <strong class="modal__title modal__title--franchise" id="modal__title">
       Thank you for your interest in owning an Ice Cream shop
@@ -10,13 +10,14 @@
       contact information below and we will reach out for additional
       information. We appreciate your patience.
     </p>
-    <button class="modal__close" data-modal-close>
+    <button class="modal__close" data-modal-close-franchise>
       <svg class="">
         <use href="../src/images/svg-sprite/symbol-defs.svg#icon-close"></use>
       </svg>
     </button>
 
     <form class="form" name="form">
+      <label class="visually-hidden" for="name"></label>
       <input
         class="modal__input"
         name="user-name"
@@ -25,6 +26,7 @@
         minlength="5"
         placeholder="Name"
       />
+      <label class="visually-hidden" for="phone"></label>
       <input
         class="modal__input"
         name="user-phone"
@@ -32,6 +34,7 @@
         type="tel"
         placeholder="Phone"
       />
+      <label class="visually-hidden" for="email"></label>
       <input
         class="modal__input"
         name="user-email"
@@ -39,11 +42,11 @@
         type="email"
         placeholder="Email"
       />
+      <label class="visually-hidden" for="message"></label>
       <textarea
         class="modal__comment"
         name="user-message"
         id="message"
-        rows="6"
         placeholder="Comment"
       ></textarea>
 
