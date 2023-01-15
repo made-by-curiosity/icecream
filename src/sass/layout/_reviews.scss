@@ -2,14 +2,17 @@
     display: flex;
 }
 .reviews{
-    padding-bottom: 409px;
+    padding-bottom: 393px;
+    @media screen and (min-width: $mobile-min) {
+            padding-bottom: 409px;
+        }
     @media screen and (min-width: $tablet-min) {
         padding-bottom: 379px;
         }
     
-        @media screen and (min-width: $desktop-min) {
-            padding-bottom: 228px;
-            }
+    @media screen and (min-width: $desktop-min) {
+        padding-bottom: 228px;
+        }
 
     &__item{
      display: flex;
@@ -21,8 +24,7 @@
         border-radius: 44px;
     }
     &__text{
-        font-weight: 400;
-        font-size: 12px;
+        letter-spacing: 0;
         line-height: 255%;
         text-align: center;
         color: var(--secondary-text-color);
@@ -31,12 +33,15 @@
         border-radius: 10px;
         padding: 35px 39px;
         margin-bottom: 32px;
+        margin-left: 12px;
+        margin-right: 12px;
         @media screen and (min-width: $tablet-min) {
             border-radius: 24px;
             padding: 28px 80px;
             font-weight: 500;
             font-size: 14px;
             line-height: 186%;
+            letter-spacing: 0,04em;
             max-width: 705px;
         }
         
@@ -51,10 +56,12 @@
         font-size: 20px;
         line-height: 186%;
         text-align: center;
+        letter-spacing: 0;
         color: var(--main-text-color);
-        margin-bottom: 32px;
+        margin-bottom: 12px;
         @media screen and (min-width: $tablet-min) {
             font-size: 16px;
+            margin-bottom: 32px;
         }
         
     }
