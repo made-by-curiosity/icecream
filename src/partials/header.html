@@ -13,24 +13,29 @@
 
       <button
         type="button"
-        aria-expanded=""
-        class="header__burger"
-        data-menu-btn
+        class="header__burger js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
       >
-        <svg width="32" height="32" class="" aria-label="mobile menu switcher">
+        <svg width="32" height="32" class="">
           <use
             class="header__burger--open"
             href="./images/svg-sprite/symbol-defs.svg#icon-menu"
           ></use>
-          <use
-            class="header__burger--close"
-            href="./images/svg-sprite/symbol-defs.svg#icon-close"
-          ></use>
         </svg>
       </button>
 
-      <div class="mobile-menu" data-menu>
-        <nav class="">
+      <div class="navigation-container">
+        <button type="button" class="main-button">
+          Buy now
+          <svg width="12" height="12" class="main-button__icon">
+            <use
+              href="./images/svg-sprite/symbol-defs.svg#icon-small-arrow"
+            ></use>
+          </svg>
+        </button>
+
+        <nav class="nav-menu">
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="#" class="site-nav__link">Home</a>
@@ -46,16 +51,63 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="main-button">
-          Buy now
-          <svg width="12" height="12" class="main-button__icon">
+      </div>
+    </div>
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="mobile-header">
+        <a href="./index.html">
+          <img
+            src="./images/header/logo.png"
+            alt="logo"
+            width="60"
+            height="65"
+            class="header__logo"
+          />
+        </a>
+        <button type="button" class="mobile-menu__icon js-close-menu">
+          <svg
+            width="32"
+            height="32"
+            class=""
+            aria-label="mobile menu switcher"
+          >
             <use
-              href="./images/svg-sprite/symbol-defs.svg#icon-small-arrow"
+              class="header__burger--close"
+              href="./images/svg-sprite/symbol-defs.svg#icon-close"
             ></use>
           </svg>
         </button>
       </div>
+      <ul class="mobile-menu__nav">
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">How it’s made?</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Our products</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Contact</a>
+        </li>
+      </ul>
+      <button type="button" class="mobile-menu__button">
+        Buy now
+        <svg width="12" height="12" class="main-button__icon">
+          <use
+            href="./images/svg-sprite/symbol-defs.svg#icon-small-arrow"
+          ></use>
+        </svg>
+      </button>
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="./js/mobile-menu.js"></script>
     </div>
   </div>
-  <script src="./js header menu/menu.js"></script>
 </header>
