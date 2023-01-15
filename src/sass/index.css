@@ -344,7 +344,9 @@ button * {
     bottom: 55px;
   }
 }
-.gallery-wrapper {
+.gallery {
+  margin: 0 auto;
+  padding: 0;
   position: relative;
 }
 
@@ -357,9 +359,10 @@ button * {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+  background-color: white;
   position: absolute;
-  top: -20%;
-  left: 30%;
+  top: -98px;
+  right: 94px;
   z-index: 999;
 }
 
