@@ -16,10 +16,10 @@
     flex-direction: column;
     }
     @media screen and(min-width:$mini-mobile-min) {
-        margin-bottom: 54px;
+        margin-bottom: 32px;
     }
     @media screen and(min-width:$mobile-min) and (max-width:$tablet-max) {
-        margin-bottom: 54px;
+        margin-bottom: 32px;
         }
         @media screen and(min-width:$tablet-min) and (max-width:$desktop-max){
             margin-bottom: 72px;
