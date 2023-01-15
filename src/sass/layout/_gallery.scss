@@ -1,22 +1,23 @@
 .gallery {
+    width: 100%;
+    height: 562px;
     margin: 0 auto;
     padding: 0;
     position: relative;
-
 }
 
 .gallery-slider {
     display: flex;
     width: 1013px;
     height: 422px;
-    border: 1px solid red;
+    border: 0.5px solid transparent;
     border-radius: 24px;
     object-fit: cover;
     overflow: hidden;
     background-color: #ffff;
     position: absolute;
     top: -98px;
-    right: 94px;
+    right: center;
     z-index: 999;
 
 }
