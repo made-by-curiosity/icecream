@@ -10,13 +10,14 @@
           class="header__logo"
         />
       </a>
+
       <button
         type="button"
         aria-expanded=""
-        aria-controls=""
         class="header__burger"
+        data-menu-btn
       >
-        <svg width="32" height="32" class="">
+        <svg width="32" height="32" class="" aria-label="mobile menu switcher">
           <use
             class="header__burger--open"
             href="./images/svg-sprite/symbol-defs.svg#icon-menu"
@@ -27,30 +28,33 @@
           ></use>
         </svg>
       </button>
-      <ul class="site-nav">
-        <li class="site-nav__item">
-          <a href="#" class="site-nav__link">Home</a>
-        </li>
-        <li class="site-nav__item">
-          <a href="#" class="site-nav__link">How it’s made?</a>
-        </li>
-        <li class="site-nav__item">
-          <a href="#" class="site-nav__link">Our products</a>
-        </li>
-        <li class="site-nav__item">
-          <a href="#" class="site-nav__link">Contact</a>
-        </li>
-      </ul>
-      <button type="button" class="main-button">
-        Buy now
-        <svg width="12" height="12" class="main-button__icon">
-          <use
-            href="./images/svg-sprite/symbol-defs.svg#icon-small-arrow"
-          ></use>
-        </svg>
-      </button>
+
+      <div class="mobile-menu" data-menu>
+        <ul class="site-nav">
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Home</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">How it’s made?</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Our products</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" class="main-button">
+          Buy now
+          <svg width="12" height="12" class="main-button__icon">
+            <use
+              href="./images/svg-sprite/symbol-defs.svg#icon-small-arrow"
+            ></use>
+          </svg>
+        </button>
+      </div>
     </nav>
   </div>
-
-  <div></div>
+  <script src="./js header menu/menu.js"></script>
 </header>
