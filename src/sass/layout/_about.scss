@@ -87,8 +87,6 @@
     text-transform: uppercase;
 }
 
-
-
 .about__text-wrap::before {
     content: '';
     width: 280px;
@@ -102,19 +100,18 @@
     background-repeat: no-repeat;
     background-position: bottom;
 
-  
     box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
   
-    // @media (min-device-pixel-ratio: 2),
-    //   (-webkit-min-device-pixel-ratio: 2),
-    //   (min-resolution: 192dpi),
-    //   (min-resolution: 2dppx) {
-    //   background: url('../images/about/cow-mobile@2x.png'),
-    //     linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
-    //     #d9d9d9;
-    //     background-repeat: no-repeat;
-    //     background-position: bottom;
-    // }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url('../images/about/cow-mobile2x.png'),
+        linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
+        #d9d9d9;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
   
     @media screen and (min-width: $tablet-min) {
       width: 330px;
@@ -139,7 +136,6 @@
           background-position: bottom;
       }
     
-  
     @media screen and (min-width: $desktop-min) {
       width: 491px;
       height: 529px;
@@ -152,7 +148,6 @@
         margin-bottom: 0px;
         background-size:contain;
         
-  
       @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -162,13 +157,8 @@
           #d9d9d9;
           background-size: contain;
           background-repeat: no-repeat;
-          background-position: bottom;
-
-          
-      }
-      
-       
-       
+          background-position: bottom;    
+      } 
     }
   }
 
