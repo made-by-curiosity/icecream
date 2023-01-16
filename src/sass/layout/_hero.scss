@@ -108,14 +108,12 @@
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 236px;
-
     @media screen and (min-width: $tablet-min) {
-      margin-bottom: 39px;
+      margin-bottom: 12px;
     }
 
     @media screen and (min-width: $desktop-min) {
-      margin-bottom: 109px;
+      margin-bottom: 42px;
     }
   }
 
@@ -252,26 +250,23 @@
     }
 
     display: inline-block;
-    position: inherit;
-    left: 216px;
     margin-bottom: 12px;
+    letter-spacing: 0;
 
     width: 139px;
 
-    line-height: 1.42;
+    line-height: 1.4;
     color: var(--secondary-text-color);
 
     @media screen and (min-width: $desktop-min) {
       width: 200px;
-      left: 257px;
       margin-bottom: 24px;
 
       font-size: 14px;
-      line-height: 1.43;
     }
   }
 
-  &__button-anchor3 {
+  &__arrow-btn {
     @media screen and (max-width: $tablet-max) {
       display: none;
     }
@@ -280,7 +275,6 @@
     position: absolute;
     justify-content: center;
     align-items: center;
-    left: 248px;
 
     width: 40px;
     height: 16px;
@@ -288,13 +282,9 @@
     color: var(--secondary-text-color);
   }
 
-  &__button-anchor3:hover,
-  &__button-anchor3:focus {
+  &__arrow-btn:hover,
+  &__arrow-btn:focus {
     color: var(--btn-hover-color);
-  }
-
-  &__button-anchor2:disabled {
-    color: var(--disable-btn-color);
   }
 
   &__big-arrow {
