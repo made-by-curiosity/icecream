@@ -1,0 +1,295 @@
+.hero {
+  position: relative;
+
+  height: 502px;
+  padding-top: 99px;
+
+  & .container {
+    background-image: url('..//../images/img-hero/img-hero_177.png'),
+      url('..//../images/img-hero/points_320.png');
+    background-repeat: no-repeat;
+    background-position: right 60px bottom, right bottom;
+  }
+
+  @media screen and (min-width: $mobile-min) {
+    height: 415px;
+    padding-top: 98px;
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    height: 415px;
+    padding-top: 80px;
+
+    & .container {
+      background-image: url('..//../images/img-hero/img-hero_268.png'),
+        url('..//../images/img-hero/points_768.png');
+      background-repeat: no-repeat;
+      background-position: right 92px bottom, 50% bottom;
+    }
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    height: 664px;
+    padding-top: 118px;
+
+    & .container {
+      background-image: url('..//../images/img-hero/img-hero_456.png'),
+        url('..//../images/img-hero/points_1200.png');
+      background-repeat: no-repeat;
+      background-position: right 92px bottom, 50% bottom;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: $tablet-min) {
+      margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: $desktop-min) {
+      margin-bottom: 42px;
+    }
+  }
+
+  &__heading {
+    display: inline-block;
+    margin-bottom: 32px;
+
+    font-family: 'Seymour One', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.27;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+
+    @media screen and (min-width: $tablet-min) {
+      margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: $desktop-min) {
+      margin-bottom: 28px;
+
+      font-size: 38px;
+      line-height: 1.26;
+    }
+  }
+
+  &__list-resource {
+    @media screen and (max-width: $tablet-max) {
+      display: none;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list-item:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $desktop-min) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__value-resource {
+    margin-bottom: 4px;
+
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+
+    text-align: right;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+
+    @media screen and (min-width: $desktop-min) {
+      font-size: 46px;
+      line-height: 1.22;
+    }
+  }
+
+  &__name-resource {
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0;
+    text-align: right;
+    color: var(--secondary-text-color);
+
+    @media screen and (min-width: $desktop-min) {
+      font-size: 14px;
+      line-height: 1.21;
+    }
+  }
+
+  &__list-button {
+    display: flex;
+
+    gap: 12px;
+    align-items: center;
+  }
+
+  &__button-anchor {
+    display: flex;
+    min-width: 106px;
+    height: 24px;
+
+    align-items: center;
+
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0;
+
+    text-decoration-line: underline;
+    color: var(--secondary-bg-color);
+
+    @media screen and (min-width: $tablet-min) {
+      min-width: 114px;
+    }
+
+    @media screen and (min-width: $desktop-min) {
+      min-width: 154px;
+      height: 40px;
+
+      font-size: 14px;
+      line-height: 1.21;
+
+      color: var(--secondary-bg-color);
+    }
+  }
+
+  &__button-anchor:hover {
+    color: var(--btn-hover-color);
+  }
+
+  &__button-anchor:focus {
+    color: var(--secondary-text-color);
+  }
+
+  &__button-anchor:disabled {
+    color: var(--disable-btn-color);
+  }
+
+  &__button-anchor a {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__bottom-plate {
+    display: flex;
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    &__bottom-plate::before {
+      content: '';
+      display: inline-flex;
+
+      width: 152px;
+      height: 152px;
+
+      margin-right: 32px;
+      background-image: url('..//../images/img-hero/plate_152.png');
+      background-size: 152px 152px;
+      background-repeat: no-repeat;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('..//../images/img-hero/plate_152@2x.png');
+        background-size: 152px 152px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    &__bottom-plate::before {
+      content: '';
+      width: 225px;
+      height: 225px;
+
+      margin-right: 16px;
+
+      background-image: url('..//../images/img-hero/plate_225.png');
+      background-size: 225px 225px;
+      background-repeat: no-repeat;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('..//../images/img-hero/plate_225@2x.png');
+        background-size: 225px 225px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__bottom-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+
+    @media screen and (min-width: $desktop-min) {
+      padding-bottom: 35px;
+    }
+  }
+
+  &__description {
+    @media screen and (max-width: $tablet-max) {
+      display: none;
+    }
+
+    display: inline-block;
+    margin-bottom: 12px;
+    letter-spacing: 0;
+
+    width: 139px;
+
+    line-height: 1.4;
+    color: var(--secondary-text-color);
+
+    @media screen and (min-width: $desktop-min) {
+      width: 200px;
+      margin-bottom: 24px;
+
+      font-size: 14px;
+    }
+  }
+
+  &__arrow-btn {
+    @media screen and (max-width: $tablet-max) {
+      display: none;
+    }
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 16px;
+
+    color: var(--secondary-text-color);
+  }
+
+  &__arrow-btn:hover,
+  &__arrow-btn:focus {
+    color: var(--btn-hover-color);
+  }
+
+  &__big-arrow {
+    fill: currentColor;
+  }
+
+  &__big-arrow:hover,
+  &__big-arrow:focus {
+    fill: var(--secondary-bg-color);
+  }
+}

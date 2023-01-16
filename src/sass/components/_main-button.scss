@@ -24,6 +24,7 @@
     background-color: var(--btn-hover-color);
     border-color: var(--btn-hover-color);
     color: var(--main-bg-color);
+    fill: var(--main-bg-color);
   }
 
   &:disabled {
@@ -93,5 +94,20 @@
 
     font-size: 12px;
     line-height: 1.25;
+  }
+}
+
+.hidden-button {
+  @media screen and (max-width: $tablet-max) {
+    display: none;
+  }
+}
+
+.menu-button {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet-min) {
+    display: none;
   }
 }

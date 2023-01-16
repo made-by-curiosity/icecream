@@ -1,0 +1,102 @@
+.slick-initialized .slick-slide {
+  display: flex;
+}
+.reviews {
+  padding-bottom: 393px;
+  @media screen and (min-width: $mobile-min) {
+    padding-bottom: 409px;
+  }
+  @media screen and (min-width: $tablet-min) {
+    padding-bottom: 379px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    padding-bottom: 228px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__img-small {
+    margin-bottom: 32px;
+    border-radius: 44px;
+  }
+  &__text {
+    letter-spacing: 0;
+    line-height: 255%;
+    text-align: center;
+    color: var(--secondary-text-color);
+    max-width: 280px;
+    background-color: var(--main-gradient-color);
+    border-radius: 10px;
+    padding: 35px 39px;
+    margin-bottom: 32px;
+    margin-left: 12px;
+    margin-right: 12px;
+    @media screen and (min-width: $tablet-min) {
+      border-radius: 24px;
+      padding: 28px 80px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 186%;
+      letter-spacing: 0, 04em;
+      max-width: 705px;
+    }
+
+    @media screen and (min-width: $desktop-min) {
+      font-size: 16px;
+      padding: 43px 109px;
+      max-width: 968px;
+    }
+  }
+  &__name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 186%;
+    text-align: center;
+    letter-spacing: 0;
+    color: var(--main-text-color);
+    margin-bottom: 12px;
+    @media screen and (min-width: $tablet-min) {
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.slick-dots {
+  position: static;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 12px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: 0.25;
+  color: var(--dots-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: var(--main-gradient-color);
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
