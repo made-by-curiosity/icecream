@@ -4,6 +4,13 @@
   height: 502px;
   padding-top: 99px;
 
+  & .container {
+    background-image: url('..//../images/img-hero/img-hero_177.png'),
+      url('..//../images/img-hero/points_320.png');
+    background-repeat: no-repeat;
+    background-position: right 60px bottom, right bottom;
+  }
+
   @media screen and (min-width: $mobile-min) {
     height: 415px;
     padding-top: 98px;
@@ -12,97 +19,26 @@
   @media screen and (min-width: $tablet-min) {
     height: 415px;
     padding-top: 80px;
+
+    & .container {
+      background-image: url('..//../images/img-hero/img-hero_268.png'),
+        url('..//../images/img-hero/points_768.png');
+      background-repeat: no-repeat;
+      background-position: right 92px bottom, 50% bottom;
+    }
   }
 
   @media screen and (min-width: $desktop-min) {
     height: 664px;
     padding-top: 118px;
+
+    & .container {
+      background-image: url('..//../images/img-hero/img-hero_456.png'),
+        url('..//../images/img-hero/points_1200.png');
+      background-repeat: no-repeat;
+      background-position: right 92px bottom, 50% bottom;
+    }
   }
-
-  //   height: 100%;
-  //   min-width: 320px;
-  //   background-repeat: no-repeat;
-
-  // @media screen and (max-width: $mobile-max) {
-  //   max-width: 479px;
-
-  //   background-image: url('.././images/img-hero/img-hero_177.png'),
-  //     url('.././images/img-hero/points_320.png');
-
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     & {
-  //       background-image: url('.././images/img-hero/img-hero_177@2x.png'),
-  //         url('.././images/img-hero/points_320@2x.png');
-  //     }
-  //   }
-
-  //   background-position: right 60px bottom 0, right 0 bottom 0;
-  //   background-size: 177px, 320px;
-  // }
-
-  // @media screen and (min-width: $mobile-min) and (max-width: $tablet-max) {
-  //   background-image: url('.././images/img-hero/img-hero_218.png'),
-  //     url('.././images/img-hero/points_320.png');
-
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     & {
-  //       background-image: url('.././images/img-hero/img-hero_218@2x.png'),
-  //         url('.././images/img-hero/points_320@2x.png');
-  //     }
-  //   }
-
-  //   background-position: right 20px bottom 0, right 0 bottom 0;
-  //   background-size: 218px, 320px;
-  // }
-
-  //   @media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
-  //     background-image: url('.././images/img-hero/img-hero_268.png'),
-  //       url('.././images/img-hero/plate_152.png'),
-  //       url('.././images/img-hero/points_768.png');
-
-  //     @media (min-device-pixel-ratio: 2),
-  //       (-webkit-min-device-pixel-ratio: 2),
-  //       (min-resolution: 192dpi),
-  //       (min-resolution: 2dppx) {
-  //       & {
-  //         background-image: url('.././images/img-hero/img-hero_268@2x.png'),
-  //           url('.././images/img-hero/plate_152@2x.png'),
-  //           url('.././images/img-hero/points_768@2x.png');
-  //       }
-  //     }
-
-  //     background-position: right 92px bottom 0, left 32px bottom 12px,
-  //       right 0 bottom 0;
-  //     background-size: 268px, 152px, 768px;
-  //   }
-
-  //   @media screen and (min-width: $desktop-min) {
-  //     background-image: url('.././images/img-hero/img-hero_456.png'),
-  //       url('.././images/img-hero/plate_225.png'),
-  //       url('.././images/img-hero/points_1200.png');
-
-  //     @media (min-device-pixel-ratio: 2),
-  //       (-webkit-min-device-pixel-ratio: 2),
-  //       (min-resolution: 192dpi),
-  //       (min-resolution: 2dppx) {
-  //       & {
-  //         background-image: url('.././images/img-hero/img-hero_456@2x.png'),
-  //           url('.././images/img-hero/plate_225@2x.png'),
-  //           url('.././images/img-hero/points_1200@2x.png');
-  //       }
-  //     }
-
-  //     background-position: right 92px bottom 0, left 16px bottom 65px,
-  //       right 0 bottom 0;
-  //     background-size: 456px, 225px, 1200px;
-  //   }
-  // }
 
   &__wrapper {
     display: flex;
