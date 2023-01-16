@@ -166,13 +166,14 @@
   }
 }
 .footer__patent {
-  width: 166px;
+  width: 280px;
   margin: 0 auto;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
   letter-spacing: 0;
+  text-align: center;
 
   color: var(--footer-policy-color);
   @media screen and (min-width: $tablet-min) {
@@ -183,5 +184,11 @@
   }
   @media screen and (min-width: $desktop-min) {
     font-size: 12px;
+  }
+}
+
+@media screen and (min-width: $tablet-min) {
+  .hidden-break {
+    display: none;
   }
 }
