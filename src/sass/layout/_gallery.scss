@@ -16,6 +16,7 @@
 }
 .gallery__wrapper {
     min-width: 280px;
+    max-width: 440px;
     min-height: 130px;
     margin: 0 auto;
     padding: 0;
@@ -23,11 +24,13 @@
 
     @media screen and (min-width: $mobile-min) {
         min-width: 440px;
+        max-width: 704px;
         height: 204px;
         
     }
     @media screen and (min-width: $tablet-min) {
         min-width: 704px;
+        max-width: 1013px;
         height: 327px;
     
     }
