@@ -1,0 +1,2 @@
+!function(){function e(e){return e&&e.__esModule?e.default:e}var t,i={};Object.defineProperty(i,"__esModule",{value:!0}),i.default=function(e,t,i){t in e?Object.defineProperty(e,t,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[t]=i;return e},$(".one-time").slick((t={dots:!0,infinite:!0,speed:300,slidesToShow:1,adaptiveHeight:!0,arrows:!1},e(i)(t,"infinite",!0),e(i)(t,"autoplay",!0),e(i)(t,"autoplaySpeed",7e3),e(i)(t,"speed",1500),t))}();
+//# sourceMappingURL=index.c377e8e6.js.map
