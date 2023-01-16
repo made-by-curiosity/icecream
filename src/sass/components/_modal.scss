@@ -1,50 +1,52 @@
-.backdrop {
-  display: none;
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
 
-  overflow-y: scroll;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1100;
+  transition: 0.3s all;
+
+  overflow: auto;
 }
 
 .modal {
-  background-color: var(--secondary-text-color);
-  width: calc(100% - 40px);
+  opacity: 0;
+  visibility: hidden;
   max-width: 280px;
   padding: 29px 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
   border-radius: 10px;
   border: 2px solid #f8d24e;
+  background-color: var(--secondary-text-color);
+  z-index: 1101;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   &__close {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 20px;
-    height: 20px;
     position: absolute;
     right: 12px;
     top: 12px;
+    width: 20px;
+    height: 20px;
     fill: var(--main-text-color);
     background-color: transparent;
-
     &:hover,
     &:focus {
       fill: var(--ice-coffee-color);
     }
+  }
 
-    @media screen and (min-width: $tablet-min) {
-      width: 24px;
-      height: 24px;
-    }
+  &__close svg {
+    width: 100%;
+    height: 100%;
   }
 
   &__form {
@@ -103,10 +105,6 @@
   width: 132px;
 }
 
-.modal__input:not(:placeholder-shown):invalid {
-  border-color: red;
-}
-
 @media screen and (min-width: $tablet-min) {
   .modal {
     max-width: 568px;
@@ -119,8 +117,6 @@
 
     &__input {
       width: 368px;
-      margin-left: 100px;
-      margin-right: 100px;
       margin-bottom: 16px;
     }
 
@@ -128,9 +124,24 @@
       width: 368px;
       margin-bottom: 32px;
     }
+
+    &__close svg {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   .main-button--modal {
     width: 121px;
   }
+}
+
+.modal__input:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }

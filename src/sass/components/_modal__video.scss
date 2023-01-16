@@ -1,0 +1,56 @@
+.modal-video__title {
+  font-size: 16px;
+  line-height: 1.5;
+  @media screen and (min-width: $tablet-min) {
+    font-size: 20px;
+  }
+}
+
+.modal__item {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 224px;
+  @media screen and (min-width: $tablet-min) {
+    width: 448px;
+  }
+}
+
+.modal__video {
+  display: block;
+  margin: 0 auto;
+  outline: none;
+  width: 224px;
+  height: 199px;
+  margin-bottom: 20px;
+  background: var(--main-text-color);
+  border-radius: 10px;
+
+  @media screen and (min-width: $tablet-min) {
+    width: 448px;
+    margin-bottom: 0px;
+
+    margin-top: 32px;
+  }
+}
+
+.modal__text {
+  text-align: left;
+  margin-bottom: 28px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--main-text-color);
+  width: 224px;
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 32px;
+    margin-bottom: 0px;
+    width: 448px;
+  }
+}
+
+.modal__list {
+  list-style: none;
+}
