@@ -28,6 +28,8 @@ a {
 }
 
 button {
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   cursor: url('../images/cursors/cursor-pointer.png'), pointer;
@@ -41,6 +43,7 @@ button {
 
 .icecream-background {
   background-position: center;
+  background-attachment: fixed;
 
   @media screen and (max-width: $tablet-max) {
     background-image: url('../images/background/background-mobile.jpg');
