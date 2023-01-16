@@ -78,7 +78,7 @@
     width: 100%;
     height: 32px;
     padding: 8px 12px;
-
+    outline: unset;
     &::placeholder {
       color: var(--main-text-color);
       line-height: 1.4;
@@ -97,12 +97,18 @@
     resize: none;
     padding: 8px 12px;
     line-height: 1.4;
+    outline: unset;
     color: var(--main-text-color);
 
     &::placeholder {
       color: var(--main-text-color);
       line-height: 1.4;
     }
+  }
+
+  &__input:focus,
+  &__comment:focus {
+    border: 2px solid #f8d24e;
   }
 }
 
