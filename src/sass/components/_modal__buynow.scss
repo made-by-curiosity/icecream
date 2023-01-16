@@ -68,6 +68,85 @@
         color: var(--main-text-color);
     }
     &__checkbox{
-        padding-top: 40px;
+        padding-top: 103px;
+        display: flex;
+        justify-content: center;
+     
     }
+    &__checkbox-item{
+        position: relative;
+        width: 132px;
+        height: 135px;
+        border-radius: 15px;
+        text-align: center;
+        padding-top: 95px;
+        padding-bottom: 20px;
+        &:nth-child(-n+2) {
+            margin-right: 32px;
+        }
+        &:first-child{
+            border: 2px solid var(--icecream-border-color);
+            border-top: none;
+        }
+        &:nth-child(2){
+            background: var(--ice-coffee-color);
+            border: 2px solid var(--ice-coffee-color);
+            border-top: none;
+        }
+        &:nth-child(3) {
+            border: 2px solid var(--address-color);
+            border-top: none;
+        }
+        &:checked{
+            background-color: var(--secondary-bg-color);
+        }
+    }
+    &__checkbox-wrapper{
+        position: absolute;
+        top: -50%;
+        right: -2%;
+    }
+    &__check-wrapper{
+        width: 132px;
+        height: 132px;
+        border-radius: 50%;
+    
+        &-a {
+            background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+        }
+        &-b {
+            background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+        }
+        &-c{
+            background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+        }
+       
+    }
+    &__check-img{
+        border-radius:50%;
+        margin-top: -139px;
+    }
+    &__label{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--main-text-color);
+    }
+    &__check-input:checked+&__checkbox-item::before {
+        border: none;
+        background-color: var(--secondary-bg-color);
+    }
+    &__input-wrapper{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
 }

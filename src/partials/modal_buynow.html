@@ -9,46 +9,52 @@
         <form action="">
             <div class="buy-now__checkbox">
                 <div class="buy-now__checkbox-item">
+                    <input type="checkbox" id="ice-cream" name="product" value="ice cream" class="buy-now__check-input visually-hidden" />
+                    <div class="buy-now__checkbox-wrapper">
+                        <div class="buy-now__check-wrapper buy-now__check-wrapper-a"></div>
+                        <img 
+                            srcset="./images/buy-now/buy-ice-cream-1x.jpg 1x, ./images/buy-now/buy-ice-cream-2x.jpg 2x"
+                            src="./images/buy-now/buy-ice-cream-1x.jpg" alt="ice cream" class="buy-now__check-img" width="132">
+                    </div>
                     <label for="ice-cream" class="buy-now__label">ice cream</label>
-                    <input type="checkbox" id="ice-cream" name="product" value="ice cream" class="buy-now__check-input" />
-                    <div class="buy-now__check-wrapper">
-                        <img src="./images/buy-now/buy-ice-cream-1x.jpg" alt="ice cream" class="buy-bow__check-img">
-                    </div>
                 </div>
-                <div class="buy-now__checkbox-item">
+                <div class="buy-now__checkbox-item"> 
+                    <input type="checkbox" id="ice-coffee" name="product" value="ice coffee" class="buy-now__check-input visually-hidden"  />
+                    <div class="buy-now__checkbox-wrapper">
+                        <div class="buy-now__check-wrapper buy-now__check-wrapper-b"></div>
+                        <img 
+                            srcset="./images/buy-now/buy-ice-coffee-1x.jpg 1x, ./images/buy-now/buy-ice-coffee-2x.jpg 2x"
+                            src="./images/buy-now/buy-ice-coffee-1x.jpg" alt="ice coffee" class="buy-now__check-img" width="132">
+                    </div>
                     <label for="ice-coffee" class="buy-now__label">ice coffee</label>
-                    <input type="checkbox" id="ice-coffee" name="product" value="ice coffee" class="buy-now__check-input"  />
-                    <div class="buy-now__check-wrapper">
-                        <img src="./images/buy-now/buy-ice-coffee-1x.jpg" alt="ice coffee" class="buy-bow__check-img">
-                    </div>
                 </div>
                 <div class="buy-now__checkbox-item">
-                    <label for="milkshake" class="buy-now__label">milkshake</label>
-                    <input type="checkbox" id="milkshake" name="product" value="milkshake" class="buy-now__check-input" />
-                    <div class="buy-now__check-wrapper">
-                        <img src="./images/buy-now/buy-milkshake-1x.jpg" alt="milkshake" class="buy-bow__check-img">
+                    <input type="checkbox" id="milkshake" name="product" value="milkshake" class="buy-now__check-input visually-hidden" />
+                    <div class="buy-now__checkbox-wrapper">
+                        <div class="buy-now__check-wrapper buy-now__check-wrapper-c"></div>
+                        <img 
+                            srcset="./images/buy-now/buy-milkshake-1x.jpg 1x, ./images/buy-now/buy-milkshake-2x.jpg 2x"
+                            src="./images/buy-now/buy-milkshake-1x.jpg" alt="milkshake" class="buy-now__check-img" width="132">
                     </div>
+                    <label for="milkshake" class="buy-now__label">milkshake</label>
                 </div>
             </div>
-            <div class="buy-now__input-group">
-                <label for="name">name</label>
-                <div class="buy-now__input-wrapper">
-                    <input type="text" class="buy-now__input" name="name" id="name" required>
+            <div class="buy-now__input-wrapper">
+                <div class="buy-now__input-group">
+                    <label for="name"></label>
+                    <input type="text" class="buy-now__input" name="name" id="name" placeholder="Name" required>
                 </div>
-            </div>
-            <div class="buy-bow__input-group">
-                <label for="tel">Phone</label>
-                <div class="buy-now__input-wrapper">
-                    <input type="tel" class="buy-now__input" id="tel" value="+380" name="tel"
-                        pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
+                <div class="buy-bow__input-group">
+                    <label for="tel"></label>
+                    <input type="tel" class="buy-now__input" id="tel"  name="tel"
+                        pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required placeholder="Phone">
                 </div>
+                <div class="buy-now__input-group">
+                    <label for="comment"></label>
+                    <textarea name="comment" id="comment" class="buy-now__text" placeholder="Comment"></textarea>
+                </div>
+                <button type="submit" class="buy-now__btn-submit button">submit</button>
             </div>
-            <div class="buy-now__input-group">
-                <label for="comment">comment</label>
-                <textarea name="comment" id="comment" class="buy-now__text" ></textarea>
-            </div>
-            <button type="submit" class="buy-now__btn-submit button">submit</button>
-
         </form>
     </div>
 
