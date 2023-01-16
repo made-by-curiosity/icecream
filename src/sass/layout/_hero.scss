@@ -239,6 +239,13 @@
     color: var(--disable-btn-color);
   }
 
+  &__button-anchor a {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
   &__description {
     @media screen and (max-width: $tablet-max) {
       display: none;
