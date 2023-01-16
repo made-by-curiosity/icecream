@@ -2,6 +2,7 @@
   background-color: var(--main-gradient-color);
   width: 100%;
   position: absolute;
+  z-index: 2;
 }
 
 .header__container {
@@ -39,7 +40,7 @@
   }
 }
 
-.main-button {
+.main-button--menu {
   @media screen and (max-width: $tablet-max) {
     display: none;
   }
