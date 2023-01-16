@@ -95,7 +95,6 @@
 @media screen and (max-width: $tablet-max) {
   .about__text-wrap::before {
     content: '';
-    // outline: 1px solid teal;
     border-radius: 50%;
     display: inline-flex;
 
