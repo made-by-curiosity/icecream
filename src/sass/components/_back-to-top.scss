@@ -2,8 +2,8 @@
   position: fixed;
   display: none;
   opacity: 0.5;
-  right: 20px;
-  bottom: 55px;
+  right: 15px;
+  bottom: 30px;
   width: 40px;
   height: 40px;
   border: 4px solid var(--back-to-top);
@@ -26,11 +26,13 @@
     width: 50px;
     height: 50px;
     right: 25px;
+    bottom: 50px;
   }
   @media screen and (min-width: $tablet-min) {
     width: 60px;
     height: 60px;
     right: 30px;
+    bottom: 55px;
   }
 }
 .icon-top {
