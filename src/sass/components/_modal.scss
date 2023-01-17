@@ -145,3 +145,11 @@
   opacity: 1;
   visibility: visible;
 }
+
+.main-button--modal-buy {
+  width: 114px;
+
+  @media screen and (min-width: $tablet-min) {
+    width: 132px;
+  }
+}

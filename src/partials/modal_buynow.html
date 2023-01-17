@@ -1,0 +1,118 @@
+<div class="buy-now__modal modal" data-modal="buynow">
+  <button type="button" class="modal__close js-modal-close">
+    <svg width="14" height="14" class="buy-now__close-svg">
+      <use href="./images/svg-sprite/symbol-defs.svg#icon-close"></use>
+    </svg>
+  </button>
+  <p class="buy-now__heading">Buy now</p>
+  <form action="">
+    <div class="buy-now__checkbox">
+      <div class="buy-now__checkbox-item">
+        <input
+          type="checkbox"
+          id="ice-cream"
+          name="product"
+          value="ice cream"
+          class="buy-now__check-input visually-hidden"
+        />
+        <div class="buy-now__checkbox-wrapper">
+          <div class="buy-now__check-wrapper buy-now__check-wrapper-a"></div>
+          <img
+            srcset="
+              ./images/buy-now/buy-ice-cream-1x.jpg 1x,
+              ./images/buy-now/buy-ice-cream-2x.jpg 2x
+            "
+            src="./images/buy-now/buy-ice-cream-1x.jpg"
+            alt="ice cream"
+            class="buy-now__check-img"
+            width="132"
+          />
+        </div>
+        <label for="ice-cream" class="buy-now__label">ice cream</label>
+      </div>
+      <div class="buy-now__checkbox-item">
+        <input
+          type="checkbox"
+          id="ice-coffee"
+          name="product"
+          value="ice coffee"
+          class="buy-now__check-input visually-hidden"
+        />
+        <div class="buy-now__checkbox-wrapper">
+          <div class="buy-now__check-wrapper buy-now__check-wrapper-b"></div>
+          <img
+            srcset="
+              ./images/buy-now/buy-ice-coffee-1x.jpg 1x,
+              ./images/buy-now/buy-ice-coffee-2x.jpg 2x
+            "
+            src="./images/buy-now/buy-ice-coffee-1x.jpg"
+            alt="ice coffee"
+            class="buy-now__check-img"
+            width="132"
+          />
+        </div>
+        <label for="ice-coffee" class="buy-now__label">ice coffee</label>
+      </div>
+      <div class="buy-now__checkbox-item">
+        <input
+          type="checkbox"
+          id="milkshake"
+          name="product"
+          value="milkshake"
+          class="buy-now__check-input visually-hidden"
+        />
+        <div class="buy-now__checkbox-wrapper">
+          <div class="buy-now__check-wrapper buy-now__check-wrapper-c"></div>
+          <img
+            srcset="
+              ./images/buy-now/buy-milkshake-1x.jpg 1x,
+              ./images/buy-now/buy-milkshake-2x.jpg 2x
+            "
+            src="./images/buy-now/buy-milkshake-1x.jpg"
+            alt="milkshake"
+            class="buy-now__check-img"
+            width="132"
+          />
+        </div>
+        <label for="milkshake" class="buy-now__label">milkshake</label>
+      </div>
+    </div>
+    <div class="buy-now__input-wrapper">
+      <div class="buy-now__input-group">
+        <label for="name"></label>
+        <input
+          type="text"
+          class="buy-now__input"
+          name="name"
+          id="user-name"
+          placeholder="Name"
+          required
+        />
+      </div>
+      <div class="buy-now__input-group">
+        <label for="tel"></label>
+        <input
+          type="tel"
+          class="buy-now__input"
+          id="tel"
+          name="tel"
+          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+          required
+          placeholder="Phone"
+        />
+      </div>
+      <div class="buy-now__input-group">
+        <label for="comment"></label>
+        <textarea
+          name="comment"
+          id="comment"
+          class="buy-now__text"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button type="submit" class="main-button main-button--modal-buy">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
