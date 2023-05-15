@@ -1,58 +1,59 @@
-<div class="backdrop-franchise is-hidden" data-modal-franchise>
-  <div class="modal-franchise">
-    <strong class="modal-franchise__title">
-      Thank you for your interest in owning an Ice Cream shop
-    </strong>
-    <p class="modal-franchise__desc">
-      Due to the overwhelming volume of franchise requests we are not accepting
-      new franchisee applications at this time. Once the application process
-      resumes, we will contact you for further information. Please fill out the
-      contact information below and we will reach out for additional
-      information. We appreciate your patience.
-    </p>
-    <button class="modal-franchise__close" data-modal-close-franchise>
-      <svg class="">
-        <use href="../src/images/svg-sprite/symbol-defs.svg#icon-close"></use>
-      </svg>
+<div class="modal-franchise modal modal-franchise" data-modal="franchise">
+  <strong class="modal-franchise__title">
+    Thank you for your interest in owning an Ice Cream shop
+  </strong>
+  <p class="modal-franchise__desc">
+    Due to the overwhelming volume of franchise requests we are not accepting
+    new franchisee applications at this time. Once the application process
+    resumes, we will contact you for further information. Please fill out the
+    contact information below and we will reach out for additional information.
+    We appreciate your patience.
+  </p>
+  <button class="modal-franchise__close" data-modal-close-franchise>
+    <svg class="">
+      <use href="../src/images/svg-sprite/symbol-defs.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <form class="modal-franchise__form" name="form">
+    <label class="visually-hidden" for="name">Enter your name</label>
+    <input
+      class="modal-franchise__input"
+      name="user-name"
+      id="name"
+      type="text"
+      minlength="5"
+      placeholder="Name"
+      required
+    />
+    <label class="visually-hidden" for="phone">Enter your phone number</label>
+    <input
+      class="modal-franchise__input"
+      name="user-phone"
+      id="phone"
+      type="tel"
+      placeholder="Phone"
+      required
+    />
+    <label class="visually-hidden" for="email">Enter your email</label>
+    <input
+      class="modal-franchise__input"
+      name="user-email"
+      id="email"
+      type="email"
+      placeholder="Email"
+      required
+    />
+    <label class="visually-hidden" for="message"></label>
+    <textarea
+      class="modal-franchise__comment"
+      name="user-message"
+      id="message"
+      placeholder="Comment"
+    ></textarea>
+
+    <button class="main-button main-button--modal-franchise" type="submit">
+      Submit
     </button>
-
-    <form class="modal-franchise__form" name="form">
-      <label class="visually-hidden" for="name">Enter your name</label>
-      <input
-        class="modal-franchise__input"
-        name="user-name"
-        id="name"
-        type="text"
-        minlength="5"
-        placeholder="Name"
-      />
-      <label class="visually-hidden" for="phone">Enter your phone number</label>
-      <input
-        class="modal-franchise__input"
-        name="user-phone"
-        id="phone"
-        type="tel"
-        placeholder="Phone"
-      />
-      <label class="visually-hidden" for="email">Enter your email</label>
-      <input
-        class="modal-franchise__input"
-        name="user-email"
-        id="email"
-        type="email"
-        placeholder="Email"
-      />
-      <label class="visually-hidden" for="message"></label>
-      <textarea
-        class="modal-franchise__comment"
-        name="user-message"
-        id="message"
-        placeholder="Comment"
-      ></textarea>
-
-      <button class="main-button main-button--modal-franchise" type="submit">
-        Submit
-      </button>
-    </form>
-  </div>
+  </form>
 </div>
