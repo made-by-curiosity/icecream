@@ -1,2 +1,0 @@
-(()=>{const e={openModalBtn:document.querySelector("[data-modal-open-franchise]"),closeModalBtn:document.querySelector("[data-modal-close-franchise]"),modal:document.querySelector("[data-modal-franchise]"),body:document.querySelector("body")};function o(){e.modal.classList.toggle("is-hidden"),e.body.classList.toggle("no-scroll")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
-//# sourceMappingURL=index.fee03342.js.map
